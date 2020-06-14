@@ -1,0 +1,25 @@
+{
+  "name": "Studienarbeit",
+  "version": "1.0.0",
+  "description": "studying",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erikqtx/Studienarbeit-Gruppe5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erikqtx/Studienarbeit-Gruppe5/issues"
+  },
+  "homepage": "https://github.com/Erikqtx/Studienarbeit-Gruppe5#readme",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "react": "^16.13.1",
+    "ws": "^7.3.0"
+  }
+}
