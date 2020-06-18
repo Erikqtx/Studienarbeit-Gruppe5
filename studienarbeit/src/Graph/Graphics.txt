@@ -1,0 +1,28 @@
+List of all possible graphs:
+
+
+Easy solution:
+
+Bar chart per state, divided under Gender/Race/Age/City/Income on click.
+
+
+
+Medium solution:
+
+Histogram per category (Personal data/Location/Time);
+Buttons to change the year (2015/2016);
+Changeable between Gender/Age/Race (Personla Data), State/City/Income (Location), Year/Month/Day (Time).
+
+
+Alternative:
+
+One histogram where you can pick out one specification out of each category.
+
+
+
+Dificult solution:
+
+
+Map of America that gives tables on click (state);
+Switchable in years (2015/2016);
+Content (histogram) switchable (City/Person/Income);
