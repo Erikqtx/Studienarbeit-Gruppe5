@@ -11,7 +11,7 @@ Medium solution:
 
 Histogram per category (Personal data/Location/Time);
 Buttons to change the year (2015/2016);
-Changeable between Gender/Age/Race (Personla Data), State/City/Income (Location), Year/Month/Day (Time).
+Changeable between Gender/Age/Race (Personal Data), State/City/Income (Location), Year/Month/Day (Time).
 
 
 Alternative:
@@ -20,7 +20,7 @@ One histogram where you can pick out one specification out of each category.
 
 
 
-Dificult solution:
+Difficult solution:
 
 
 Map of America that gives tables on click (state);
