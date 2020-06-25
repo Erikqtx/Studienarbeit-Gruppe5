@@ -1,15 +1,25 @@
 //require csvtojson module
-const CSVToJSON = require('csvtojson');
+
+const CSVToJSON = require("csvtojson");
+const fs = require("fs");
 
 //convert the-counted-2015.csv file to json array
-CSVToJSON().fromFile('./src/Database/thecounted-data/the-counted-2015.csv')
-    .then(cases => {
 
-        console.log(cases);
+CSVToJSON()
+  .fromFile("./Database/thecounted-data/the-counted-2015.csv")
+  .then((cases) => {
+    console.log(cases);
 
 
-    }).catch(err => {
+    //write JSON Array to a file
 
-        console.log(err);
-
+    fs.writeFile("the-counted-2015", JSON.stringify(cases, null, 4), (err) => {
+      if (err) {
+        throw err;
+      }
+      console.log("JSON is saved.");
     });
+  })
+  .catch((err) => {
+    console.log(err);
+  }); 
