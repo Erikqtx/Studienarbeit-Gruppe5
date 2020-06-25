@@ -10,16 +10,41 @@ CSVToJSON()
   .then((cases) => {
     console.log(cases);
 
-
     //write JSON Array to a file
-
-    fs.writeFile("the-counted-2015", JSON.stringify(cases, null, 4), (err) => {
-      if (err) {
-        throw err;
+    fs.writeFile(
+      "./Database/json files/the-counted-2015",
+      JSON.stringify(cases, null, 4),
+      (err) => {
+        if (err) {
+          throw err;
+        }
+        console.log("JSON is saved.");
       }
-      console.log("JSON is saved.");
-    });
+    );
   })
   .catch((err) => {
     console.log(err);
-  }); 
+  });
+
+//convert the-counted-2016.csv file to json array
+
+CSVToJSON()
+  .fromFile("./Database/thecounted-data/the-counted-2016.csv")
+  .then((cases) => {
+    console.log(cases);
+
+    //write JSON Array to a file
+    fs.writeFile(
+      "./Database/json files/the-counted-2016",
+      JSON.stringify(cases, null, 4),
+      (err) => {
+        if (err) {
+          throw err;
+        }
+        console.log("JSON is saved.");
+      }
+    );
+  })
+  .catch((err) => {
+    console.log(err);
+  });
