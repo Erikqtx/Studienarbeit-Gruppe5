@@ -9,8 +9,10 @@ function App() {
       <h1 className="header">
         Police Killings in America
         <hr />
-        <MapChart />
       </h1>
+      <div className="Content">
+        <MapChart />
+      </div>
     </div>
   );
 }
