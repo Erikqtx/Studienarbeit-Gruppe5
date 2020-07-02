@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/App.css";
-import "./Map/styles.css";
+import "./Map/map.css";
 import MapChart from "./Map/MapChart";
 function App() {
   return (
