@@ -3,19 +3,32 @@
 .App {
   background-color: #282c34;
   height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.box {
+  margin: 5px;
+  background-color: aqua;
+}
+
 .header {
+  grid-column: 1 / span 2;
   color: white;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   width: 100%;
 }
 
+.text {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
 
+.info {
+  text-align: center;
+  margin-left: 15px;
+  border-left: 1px solid white;
+}
 

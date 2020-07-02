@@ -6,12 +6,20 @@ import MapChart from "./Map/MapChart";
 function App() {
   return (
     <div className="App">
-      <h1 className="header">
-        Police Killings in America
-        <hr />
-      </h1>
-      <div className="Content">
+      <div className="box header">
+        <h1>
+          Police Killings in America
+          <hr />
+        </h1>
+      </div>
+      <div class="box text">
+        <p>Hallo ich bin ein Text</p>
+      </div>
+      <div className="box map">
         <MapChart />
+      </div>
+      <div className="box info">
+        <p>Info</p>
       </div>
     </div>
   );
