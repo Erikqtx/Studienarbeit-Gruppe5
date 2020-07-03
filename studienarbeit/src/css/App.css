@@ -10,7 +10,7 @@
 
 .box {
   margin: 5px;
-  background-color: aqua;
+  
 }
 
 .header {
@@ -46,4 +46,3 @@
     border-top: 1px solid white;
   }
 }
-

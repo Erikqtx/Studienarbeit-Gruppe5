@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/App.css";
 import "./Map/Map.css";
+import Button from "./Button"
+
 import MapChart from "./Map/MapChart";
 function App() {
   return (
@@ -15,13 +17,15 @@ function App() {
       <div class="box text">
         <p>Hallo ich bin ein Text</p>
       </div>
+
       <div className="box map">
-        <MapChart />
+          <Button/>
+          <MapChart />
+        </div>
+        <div className="box info">
+          <p>Info</p>
+        </div>
       </div>
-      <div className="box info">
-        <p>Info</p>
-      </div>
-    </div>
   );
 }
 
