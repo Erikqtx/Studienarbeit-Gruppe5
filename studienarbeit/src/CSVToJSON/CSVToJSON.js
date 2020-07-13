@@ -12,7 +12,7 @@ CSVToJSON()
 
     //write JSON Array to a file
     fs.writeFile(
-      "./Database/json files/the-counted-2015",
+      "./Database/json files/2015.json",
       JSON.stringify(cases, null, 4),
       (err) => {
         if (err) {
@@ -35,7 +35,7 @@ CSVToJSON()
 
     //write JSON Array to a file
     fs.writeFile(
-      "./Database/json files/the-counted-2016",
+      "./Database/json files/2016.json",
       JSON.stringify(cases, null, 4),
       (err) => {
         if (err) {

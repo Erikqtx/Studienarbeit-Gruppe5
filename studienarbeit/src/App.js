@@ -2,9 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/App.css";
 import "./Map/Map.css";
-import Button from "./Button"
-
+import Button from "./Button";
 import MapChart from "./Map/MapChart";
+import data_fifteen from "./Database/json files/data_fifteen.json";
+import data_sixteen from "./Database/json files/data_sixteen.json";
+
+//Testlogs
+console.log(data_fifteen);
+console.log(data_sixteen);
 function App() {
   return (
     <div className="App">
@@ -19,13 +24,13 @@ function App() {
       </div>
 
       <div className="box map">
-          <Button/>
-          <MapChart />
-        </div>
-        <div className="box info">
-          <p>Info</p>
-        </div>
+        <Button />
+        <MapChart />
       </div>
+      <div className="box info">
+        <p>Info</p>
+      </div>
+    </div>
   );
 }
 
