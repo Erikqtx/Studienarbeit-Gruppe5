@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render as always without data 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="box header"
+    >
+      <h1>
+        Police Killings in America
+        <hr />
+        <div>
+           
+        </div>
+        ;
+      </h1>
+    </div>
+    <div
+      class="box text"
+    >
+      <p>
+        Hallo ich bin ein Text
+      </p>
+    </div>
+    <div
+      class="box map"
+    >
+      <div>
+        <div
+          class="button-box1"
+          id="cs"
+        >
+          <input
+            checked=""
+            hidden=""
+            id="country"
+            name="us"
+            type="radio"
+          />
+          <label
+            for="country"
+          >
+            Country
+          </label>
+          <input
+            hidden=""
+            id="state"
+            name="us"
+            type="radio"
+          />
+          <label
+            for="state"
+          >
+            State
+          </label>
+        </div>
+        <div
+          class="button-box2"
+        >
+          <input
+            checked=""
+            hidden=""
+            id="year1"
+            name="year"
+            type="radio"
+          />
+          <label
+            for="year1"
+          >
+            2015
+          </label>
+          <input
+            hidden=""
+            id="year2"
+            name="year"
+            type="radio"
+          />
+          <label
+            for="year2"
+          >
+            2016
+          </label>
+        </div>
+      </div>
+      <svg
+        class="rsm-svg "
+        viewBox="0 0 800 600"
+      >
+        <g
+          class="rsm-geographies "
+        />
+      </svg>
+    </div>
+    <div
+      class="box info"
+    >
+      <p>
+        Info
+      </p>
+    </div>
+  </div>
+</div>
+`;

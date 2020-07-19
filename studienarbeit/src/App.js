@@ -1,22 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./css/App.css";
 import "./Map/Map.css";
 import Button from "./Button";
 import MapChart from "./Map/MapChart";
-import data_fifteen from "./Database/json files/data_fifteen.json";
-import data_sixteen from "./Database/json files/data_sixteen.json";
-
-//Testlogs
-console.log(data_fifteen);
-console.log(data_sixteen);
+import Dummy from "./dummy";
+import { PoliceKillings2015Provider } from "./police-killings-context/police-killings-context-2015";
 function App() {
   return (
     <div className="App">
       <div className="box header">
         <h1>
-          Police Killings in America
-          <hr />
+          <PoliceKillings2015Provider>
+            Police Killings in America
+            <hr />
+            <Dummy></Dummy>
+          </PoliceKillings2015Provider>
         </h1>
       </div>
       <div class="box text">
@@ -35,5 +33,3 @@ function App() {
 }
 
 export default App;
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
