@@ -3,18 +3,14 @@ import "./css/App.css";
 import "./Map/Map.css";
 import Button from "./Button";
 import MapChart from "./Map/MapChart";
-import Dummy from "./dummy";
-import { PoliceKillings2015Provider } from "./police-killings-context/police-killings-context-2015";
+import USAChart from "./chart/USAChart";
 function App() {
   return (
     <div className="App">
       <div className="box header">
         <h1>
-          <PoliceKillings2015Provider>
-            Police Killings in America
-            <hr />
-            <Dummy></Dummy>
-          </PoliceKillings2015Provider>
+          Police Killings in America
+          <hr />
         </h1>
       </div>
       <div class="box text">
