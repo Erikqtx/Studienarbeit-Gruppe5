@@ -1,110 +1,127 @@
-/*Country-State Slider Button*/
-
 .button-box1 {
-  width: 20%;
   margin-left: 10px;
   margin-top: 15px;
   position: relative;
-  box-shadow: 9px 2px 16px -8px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  background: rgba(195, 216, 221, 0.301);
   transform: translate(15%, 10%);
   overflow: hidden;
   float: left;
 }
 
-.button-box1 label {
-  padding: 3px 0 3px 0;
-  width: 50%;
-  float: left;
+.country{
+ background-color: rgba(195, 216, 221, 0.301);;
+ border: none;
+ border-radius: 5px;
+ color: white;
+ padding: 2px 15px;
+ text-align: center;
+ display: inline-block;
+ font-size: 13px;
+ cursor: pointer;
+ width: 6em;
+ transition: all .3s ease;
+}
+
+.country:hover{
+  background-color: rgba(255, 255, 255, 0.432);
   color: white;
-  cursor: pointer;
-  position: relative;
-  font-size: 13px;
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-}
+ }
 
-.slider {
-  position: absolute;
-  left: 0%;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.5s;
-  transition: 0.1s left 0.05s ease-in-out;
-  z-index: -1;
-}
-
-#country + label:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: -1;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-#country:checked + label:before {
-  left: 0;
-}
-
-#country:checked + label,
-#state:checked + label {
+ .country:active{
   color: black;
-}
+  background-color: white;
+ }
 
-/*Year 2015-2016 Slider Button*/
+ .state{
+  background-color: rgba(195, 216, 221, 0.301);;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width: 6em;
+  margin-left: 2px;
+  transition: all .3s ease;
+ }
+
+ .state:hover{
+  background-color: rgba(255, 255, 255, 0.432);
+  color: white;
+ }
+
+ .state:active{
+  color: black;
+  background-color: white;
+ }
+
+
+
 
 .button-box2 {
   width: 20%;
   margin-right: 10%;
   margin-top: 15px;
   position: relative;
-  box-shadow: 9px 2px 16px -8px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: rgba(195, 216, 221, 0.301);
   transform: translate(15%, 10%);
   overflow: hidden;
   float: right;
 }
 
-.button-box2 label {
-  padding: 3px 0 3px 0;
-  width: 50%;
-  float: left;
+.year1{
+  background-color: rgba(195, 216, 221, 0.301);;
+  border: none;
+  border-radius: 5px;
   color: white;
-  cursor: pointer;
-  position: relative;
-  font-size: 13px;
+  padding: 2px 15px;
   text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-}
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width: 6em;
+  transition: all .3s ease;
+ }
+ 
+ .year1:hover{
+   background-color: rgba(255, 255, 255, 0.432);
+   color: white;
+  }
+ 
+  .year1:active{
+   color: black;
+   background-color: white;
+  }
+ 
+  .year2{
+   background-color: rgba(195, 216, 221, 0.301);;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   padding: 2px 15px;
+   text-align: center;
+   display: inline-block;
+   font-size: 13px;
+   cursor: pointer;
+   width: 6em;
+   margin-left: 2px;
+   transition: all .3s ease;
+  }
+ 
+  .year2:hover{
+   background-color: rgba(255, 255, 255, 0.432);
+   color: white;
+  }
+ 
+  .year2:active{
+   color: black;
+   background-color: white;
+  }
 
-#year1 + label:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: -1;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
 
-#year1:checked + label:before {
-  left: 0;
-}
 
-#year1:checked + label,
-#year2:checked + label {
-  color: black;
-}
+
 
 @media only screen and (max-width: 600px) {
   .button-box1,
@@ -112,8 +129,4 @@
     width: 30%;
   }
 
-  .button-box1 label,
-  .button-box2 label {
-    font-size: 12px;
-  }
 }
