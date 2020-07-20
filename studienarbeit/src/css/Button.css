@@ -15,7 +15,6 @@
  font-size: 13px;
  cursor: pointer;
  width: 6em;
- transition: all .3s ease;
 }
 
 .country:hover{
@@ -39,7 +38,6 @@
   font-size: 13px;
   cursor: pointer;
   width: 6em;
-  transition: all .3s ease;
  }
 
  .state:hover{
@@ -62,7 +60,6 @@
   font-size: 13px;
   cursor: pointer;
   width: 6em;
-  transition: all .3s ease;
  }
  
  .year1:hover{
@@ -85,7 +82,7 @@
    font-size: 13px;
    cursor: pointer;
    width: 6em;
-   transition: all .3s ease;
+   
   }
  
   .year2:hover{
