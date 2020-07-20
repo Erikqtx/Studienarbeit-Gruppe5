@@ -1,9 +1,12 @@
 import React from "react";
 import "./css/App.css";
 import "./Map/Map.css";
-import Button from "./Button";
+import Button from "./Buttons/Button";
 import MapChart from "./Map/MapChart";
-import USAChart from "./chart/USAChart";
+import USAChart2015, { USAChart2016 } from "./charts/USAChart";
+import Dummy from "./dummy";
+import PoliceKillings2015Provider from "./police-killings-context/police-killings-context-2015";
+import Main from "./main";
 function App() {
   return (
     <div className="App">
@@ -23,6 +26,9 @@ function App() {
       </div>
       <div className="box info">
         <p>Info</p>
+        <PoliceKillings2015Provider>
+          <USAChart2015></USAChart2015>
+        </PoliceKillings2015Provider>
       </div>
     </div>
   );
