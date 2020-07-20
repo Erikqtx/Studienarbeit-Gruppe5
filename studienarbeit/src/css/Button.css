@@ -1,20 +1,16 @@
-.button-box1 {
-  margin-left: 10px;
-  margin-top: 15px;
-  position: relative;
-  border-radius: 5px;
-  transform: translate(15%, 10%);
+.parentbox{
   overflow: hidden;
-  float: left;
+  padding: 5px 5px;
+  margin-left: 10px; 
 }
 
 .country{
  background-color: rgba(195, 216, 221, 0.301);;
  border: none;
- border-radius: 5px;
  color: white;
  padding: 2px 15px;
  text-align: center;
+ border-radius: 40px 0px 0px 40px;
  display: inline-block;
  font-size: 13px;
  cursor: pointer;
@@ -35,15 +31,14 @@
  .state{
   background-color: rgba(195, 216, 221, 0.301);;
   border: none;
-  border-radius: 5px;
   color: white;
   padding: 2px 15px;
+  border-radius: 0px 40px 40px 0px;
   text-align: center;
   display: inline-block;
   font-size: 13px;
   cursor: pointer;
   width: 6em;
-  margin-left: 2px;
   transition: all .3s ease;
  }
 
@@ -57,27 +52,13 @@
   background-color: white;
  }
 
-
-
-
-.button-box2 {
-  width: 20%;
-  margin-right: 10%;
-  margin-top: 15px;
-  position: relative;
-  transform: translate(15%, 10%);
-  overflow: hidden;
-  float: right;
-}
-
 .year1{
   background-color: rgba(195, 216, 221, 0.301);;
   border: none;
-  border-radius: 5px;
   color: white;
   padding: 2px 15px;
   text-align: center;
-  display: inline-block;
+  border-radius: 40px 0px 0px 40px;
   font-size: 13px;
   cursor: pointer;
   width: 6em;
@@ -97,15 +78,13 @@
   .year2{
    background-color: rgba(195, 216, 221, 0.301);;
    border: none;
-   border-radius: 5px;
    color: white;
    padding: 2px 15px;
+   border-radius: 0px 40px 40px 0px;
    text-align: center;
-   display: inline-block;
    font-size: 13px;
    cursor: pointer;
    width: 6em;
-   margin-left: 2px;
    transition: all .3s ease;
   }
  
@@ -118,15 +97,3 @@
    color: black;
    background-color: white;
   }
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-  .button-box1,
-  .button-box2 {
-    width: 30%;
-  }
-
-}

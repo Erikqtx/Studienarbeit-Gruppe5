@@ -21,17 +21,12 @@ function Button() {
   }
 
   return (
-    <div>
-      <div class="button-box1">
+    <div className="parentbox">
         <button class ="country" onClick = {Country}>Country</button>
         <button class ="state" onClick = {State}>State</button>
-      </div>
-
-
-      <div class = "button-box2">
+        <div/>
         <button class ="year1" onClick = {year2015}>2015</button>
         <button class ="year2" onClick = {year2016}>2016</button>
-      </div>
     </div>
   );
 }
