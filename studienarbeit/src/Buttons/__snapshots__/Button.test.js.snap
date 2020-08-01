@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="parentbox"
+>
+  <button
+    className="country"
+    data-testid="country"
+    onClick={[Function]}
+  >
+    Country
+  </button>
+  <button
+    className="state"
+    onClick={[Function]}
+  >
+    State
+  </button>
+  <div />
+  <button
+    className="year1"
+    onClick={[Function]}
+  >
+    2015
+  </button>
+  <button
+    className="year2"
+    onClick={[Function]}
+  >
+    2016
+  </button>
+</div>
+`;
