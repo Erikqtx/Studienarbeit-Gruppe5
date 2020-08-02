@@ -11,7 +11,7 @@ describe("police-killings-context", () => {
       const labels2015 = rows2015[0].split(",");
       fetch.mockResponseOnce(csvContent2015);
       const data2015 = await loadPoliceKillings2015Data();
-      expect(data2015.length).toEqual(rows2015.length - 1);
+      expect(data2015.length).toEqual(1146);
     });
   });
 });
