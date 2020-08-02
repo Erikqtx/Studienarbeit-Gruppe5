@@ -33,22 +33,22 @@ const MapChart = () => {
             {geographies.map((geo) => (
               <Geography
                 key={geo.rsmKey}
-                stroke="#FFF"
+                stroke="#282c34"
                 geography={geo}
-                fill="#DDD"
+                fill="rgba(195, 216, 221, 0.301)"
               />
             ))}
             {geographies.map((geo) => {
               const centroid = geoCentroid(geo);
               const cur = allStates.find((s) => s.val === geo.id);
               return (
-                <g key={geo.rsmKey + "-name"}>
+                <g key={geo.rsmKey + "-name"} >
                   {cur &&
                     centroid[0] > -160 &&
                     centroid[0] < -67 &&
                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                      <Marker coordinates={centroid}>
-                        <text y="2" fontSize={14} textAnchor="middle">
+                      <Marker coordinates={centroid} >
+                        <text y="2" fontSize={14} textAnchor="middle" fill="#DDD">
                           {cur.id}
                         </text>
                       </Marker>
@@ -58,7 +58,7 @@ const MapChart = () => {
                         dx={offsets[cur.id][0]}
                         dy={offsets[cur.id][1]}
                       >
-                        <text x={4} fontSize={14} alignmentBaseline="middle">
+                        <text x={4} fontSize={14} alignmentBaseline="middle" fill="#DDD">
                           {cur.id}
                         </text>
                       </Annotation>
