@@ -23,10 +23,10 @@ function Button() {
   return (
     <div className="parentbox">
         <button data-testid="country" className ="country" onClick = {Country}>Country</button>
-        <button className ="state" onClick = {State}>State</button>
+        <button data-testid="state" className ="state" onClick = {State}>State</button>
         <div/>
-        <button className ="year1" onClick = {year2015}>2015</button>
-        <button className ="year2" onClick = {year2016}>2016</button>
+        <button data-testid="year1" className ="year1" onClick = {year2015}>2015</button>
+        <button data-testid="year2" className ="year2" onClick = {year2016}>2016</button>
     </div>
   );
 }

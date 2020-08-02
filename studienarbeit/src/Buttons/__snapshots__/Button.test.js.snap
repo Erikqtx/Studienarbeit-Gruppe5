@@ -13,6 +13,7 @@ exports[`matches the snapshot 1`] = `
   </button>
   <button
     className="state"
+    data-testid="state"
     onClick={[Function]}
   >
     State
@@ -20,12 +21,14 @@ exports[`matches the snapshot 1`] = `
   <div />
   <button
     className="year1"
+    data-testid="year1"
     onClick={[Function]}
   >
     2015
   </button>
   <button
     className="year2"
+    data-testid="year2"
     onClick={[Function]}
   >
     2016

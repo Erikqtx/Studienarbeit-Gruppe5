@@ -16,13 +16,28 @@ it("matches the snapshot", () => {
 })
 
 it("captures clicks", () => {
-    function handleClick() {
-    }
+
     const { getByTestId } = render(
-        <Button onClick={handleClick}>Country</Button>
+        <Button onClick>Country</Button>
     );
+    
     const node = getByTestId("country");
     fireEvent.click(node);
+
+
+});
+
+it("captures clicks", () => {
+
+    const { getByTestId } = render(
+        <Button onClick>2015</Button>
+    );
+    
+    const node = getByTestId("year1");
+    fireEvent.click(node);
+
+
 });
 
 afterEach(cleanup);
+
