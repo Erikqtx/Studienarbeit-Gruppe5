@@ -8,7 +8,7 @@ export function loadPoliceKillings2016Data() {
 }
 
 export const PoliceKillings2016Context = createContext();
-export function PoliceKillings2016Provider(props) {
+export default function PoliceKillings2016Provider(props) {
   const [killings, setkillings] = useState([]);
   useEffect(() => {
     loadPoliceKillings2016Data().then((PoliceKillings2016Data) => {
