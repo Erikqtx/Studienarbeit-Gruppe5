@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { render } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import App from "./App";
 import Button from "./Buttons/Button";
-import USAChart2015 from "./charts/USAChart";
+import USAChart2015 from "./charts/USAChart2015";
 import { PoliceKillings2015Provider } from "./police-killings-context/police-killings-context-2015";
 import renderer from "react-test-renderer";
 import MapChart from "./Map/MapChart";
@@ -41,3 +41,5 @@ it("renders box info", () => {
   );
   container.querySelector("box info");
 });
+
+afterEach(cleanup);
