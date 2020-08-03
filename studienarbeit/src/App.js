@@ -3,9 +3,9 @@ import "./css/App.css";
 import Button from "./Buttons/Button";
 import MapChart from "./Map/MapChart";
 import USAChart2015 from "./charts/USAChart2015";
-//import USAChart2016 from "./charts/USAChart2016";
+import USAChart2016 from "./charts/USAChart2016";
 import PoliceKillings2015Provider from "./police-killings-context/police-killings-context-2015";
-//import PoliceKillings2016Provider from "./police-killings-context/police-killings-context-2016";
+import PoliceKillings2016Provider from "./police-killings-context/police-killings-context-2016";
 function App() {
   return (
     <div className="App">
@@ -28,6 +28,9 @@ function App() {
 
       <div className="box map">
         <Button />
+        <PoliceKillings2016Provider>
+          <USAChart2016 />
+        </PoliceKillings2016Provider>
         <PoliceKillings2015Provider>
           <USAChart2015 />
         </PoliceKillings2015Provider>
