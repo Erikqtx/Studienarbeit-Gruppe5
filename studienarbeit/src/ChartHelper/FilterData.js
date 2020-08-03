@@ -10,3 +10,9 @@ export function extractRace(input) {
     return entry.raceethnicity;
   });
 }
+//Filter States
+export function extractState(input) {
+  return input.map((entry) => {
+    return entry.state;
+  });
+}
