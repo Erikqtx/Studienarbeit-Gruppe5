@@ -18,7 +18,9 @@ exports[`matches the snapshot 1`] = `
   >
     State
   </button>
-  <div />
+  <div
+    className="space"
+  />
   <button
     className="year1"
     data-testid="year1"

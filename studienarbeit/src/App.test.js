@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { render } from "@testing-library/react";
 import App from "./App";
 import Button from "./Buttons/Button";
-import USAChart from "./charts/USAChart";
+import USAChart2015 from "./charts/USAChart";
 import { PoliceKillings2015Provider } from "./police-killings-context/police-killings-context-2015";
 import renderer from 'react-test-renderer';
 import MapChart from "./Map/MapChart";
