@@ -6,7 +6,8 @@ import PoliceKillings2015Provider from "./../police-killings-context/police-kill
 import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
 import USAChart2015 from "./../charts/USAChart2015";
 import USAChart2016 from "./../charts/USAChart2016";
-
+import Map2015 from "../Map/Map2015";
+import Map2016 from "../Map/Map2016";
 class LoginControl extends React.Component {
   constructor(props) {
     super(props);
@@ -46,6 +47,7 @@ function Button2015(props) {
   return (
     <PoliceKillings2015Provider>
       <USAChart2015 />
+      <Map2015></Map2015>
     </PoliceKillings2015Provider>
   );
 }
@@ -54,6 +56,7 @@ function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
+      <Map2016></Map2016>
     </PoliceKillings2016Provider>
   );
 }

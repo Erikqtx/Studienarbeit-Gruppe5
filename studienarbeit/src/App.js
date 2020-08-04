@@ -1,17 +1,9 @@
 import React, { useState, Component } from "react";
 import "./css/App.css";
 import Button from "./Buttons/Button";
-import USAChart2015 from "./charts/USAChart2015";
-import USAChart2016 from "./charts/USAChart2016";
-import PoliceKillings2015Provider, {
-  PoliceKillings2015Context,
-} from "./police-killings-context/police-killings-context-2015";
-import PoliceKillings2016Provider from "./police-killings-context/police-killings-context-2016";
-import AlabamaChart2015 from "./charts/2015/Alabama";
 import "./css/Button.css";
 import Map2015 from "./Map/Map2015";
 import { render } from "@testing-library/react";
-/*0-5: #f4f5ba, 5-20: eded3e, 20-40: f56262, 40-100: e64343, 100-250:*/
 class App extends Component {
   render() {
     return (
@@ -33,9 +25,7 @@ class App extends Component {
             <Button />
           </p>
         </div>
-        <div className="Map">
-          <Map2015></Map2015>
-        </div>
+        <div className="Map"></div>
       </div>
     );
   }
