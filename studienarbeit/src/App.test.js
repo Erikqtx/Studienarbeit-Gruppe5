@@ -6,7 +6,6 @@ import Button from "./Buttons/Button";
 import USAChart2015 from "./charts/USAChart2015";
 import { PoliceKillings2015Provider } from "./police-killings-context/police-killings-context-2015";
 import renderer from "react-test-renderer";
-import MapChart from "./Map/MapChart";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
@@ -29,7 +28,7 @@ it("renders text", () => {
 });
 
 it("renders box map", () => {
-  const { container } = render(<Button />, <MapChart />);
+  const { container } = render(<Button />);
   container.querySelector("box map");
 });
 
