@@ -1,6 +1,7 @@
 import React, { useState, Component } from "react";
 import "./css/App.css";
 import Button from "./Buttons/Button";
+import ButtonState from "./Buttons/ButtonState";
 import "./css/Button.css";
 import Map2015 from "./Map/Map2015";
 import { render } from "@testing-library/react";
@@ -26,6 +27,7 @@ class App extends Component {
           </p>
         </div>
         <div className="Map"></div>
+        <ButtonState></ButtonState>
       </div>
     );
   }
