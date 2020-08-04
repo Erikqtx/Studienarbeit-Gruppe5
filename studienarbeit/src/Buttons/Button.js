@@ -46,6 +46,10 @@ function Button2015(props) {
   return (
     <PoliceKillings2015Provider>
       <USAChart2015 />
+      <p>
+        Legende: 0-5 Tode: #f4f5ba, 5-10 Tode: #ffff87, 10-20 Tode: #eded3e,
+        20-40 Tode: #f56262,40-100 Tode: #e64343, 100-250 Tode: #d10a0a{" "}
+      </p>
       <Map2015></Map2015>
     </PoliceKillings2015Provider>
   );
@@ -69,11 +73,19 @@ function Buttoncountry(props) {
 }
 
 function LoginButton(props) {
-  return <button className="year" onClick={props.onClick}>2015</button>;
+  return (
+    <button className="year" onClick={props.onClick}>
+      2015
+    </button>
+  );
 }
 
 function LogoutButton(props) {
-  return <button className="year" onClick={props.onClick}>2016</button>;
+  return (
+    <button className="year" onClick={props.onClick}>
+      2016
+    </button>
+  );
 }
 
 ReactDOM.render(<LoginControl />, document.getElementById("root"));
