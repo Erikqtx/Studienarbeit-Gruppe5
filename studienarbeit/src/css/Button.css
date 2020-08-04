@@ -1,100 +1,25 @@
-.parentbox{
-  overflow: hidden;
-  padding: 5px 5px;
-  margin-left: 10px; 
-}
 
-.country{
- background-color: rgba(195, 216, 221, 0.301);;
- border: none;
- color: white;
- padding: 2px 15px;
- text-align: center;
- border-radius: 40px 0px 0px 40px;
- display: inline-block;
- font-size: 13px;
- cursor: pointer;
- width: 6em;
-}
-
-.country:hover{
-  background-color: rgba(255, 255, 255, 0.432);
-  color: white;
- }
-
- .country:active{
-  color: black;
-  background-color: white;
- }
-
- .state{
+.year{
   background-color: rgba(195, 216, 221, 0.301);;
   border: none;
   color: white;
-  padding: 2px 15px;
-  border-radius: 0px 40px 40px 0px;
+  padding: 10px 15px;
   text-align: center;
-  display: inline-block;
-  font-size: 13px;
+  border-radius: 50px;
+  font-size: 15px;
   cursor: pointer;
-  width: 6em;
- }
-
- .state:hover{
-  background-color: rgba(255, 255, 255, 0.432);
-  color: white;
- }
-
- .state:active{
-  color: black;
-  background-color: white;
- }
-
-.year1{
-  background-color: rgba(195, 216, 221, 0.301);;
-  border: none;
-  color: white;
-  padding: 2px 15px;
-  text-align: center;
-  border-radius: 40px 0px 0px 40px;
-  font-size: 13px;
-  cursor: pointer;
-  width: 6em;
+  width: 10em;
+  float: left;
  }
  
- .year1:hover{
+ .year:hover{
    background-color: rgba(255, 255, 255, 0.432);
    color: white;
   }
  
-  .year1:active{
+  .year:active{
    color: black;
    background-color: white;
   }
  
-  .year2{
-   background-color: rgba(195, 216, 221, 0.301);;
-   border: none;
-   color: white;
-   padding: 2px 15px;
-   border-radius: 0px 40px 40px 0px;
-   text-align: center;
-   font-size: 13px;
-   cursor: pointer;
-   width: 6em;
-   
-  }
- 
-  .year2:hover{
-   background-color: rgba(255, 255, 255, 0.432);
-   color: white;
-  }
- 
-  .year2:active{
-   color: black;
-   background-color: white;
-  }
-
-  .space{
-    padding-top: 5px;
-  }
+  

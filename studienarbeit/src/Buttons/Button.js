@@ -69,11 +69,11 @@ function Buttoncountry(props) {
 }
 
 function LoginButton(props) {
-  return <button onClick={props.onClick}>2015</button>;
+  return <button className="year" onClick={props.onClick}>2015</button>;
 }
 
 function LogoutButton(props) {
-  return <button onClick={props.onClick}>2016</button>;
+  return <button className="year" onClick={props.onClick}>2016</button>;
 }
 
 ReactDOM.render(<LoginControl />, document.getElementById("root"));

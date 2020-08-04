@@ -45,7 +45,7 @@
     border-top: 1px solid white;
   }
 }
-.states {
-  height: 50%;
-  width: 50%;
+.map {
+  float: left;
 }
+
