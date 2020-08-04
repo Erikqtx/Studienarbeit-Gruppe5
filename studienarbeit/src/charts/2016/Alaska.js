@@ -1,7 +1,7 @@
 import React, { useContext, useMemo } from "react";
 import { Bar } from "react-chartjs-2";
-import { PoliceKillings2016Context } from "../../../police-killings-context/police-killings-context-2016";
-import { extractState } from "../../../ChartHelper/FilterData";
+import { PoliceKillings2016Context } from "../../police-killings-context/police-killings-context-2016";
+import { extractState } from "../../ChartHelper/FilterData";
 export default function AlaskaChart2016() {
   //load our data and save it
   const [killings] = useContext(PoliceKillings2016Context);
@@ -41,8 +41,8 @@ export default function AlaskaChart2016() {
   return (
     <Bar
       data={data}
-      width="300"
-      height="200"
+      width="100"
+      height="100"
       options={{
         maintainAspectRatio: true,
       }}

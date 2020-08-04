@@ -1,6 +1,6 @@
 import React, { useState, render } from "react";
-import "../css/Button.css";
 import ReactDOM from "react-dom";
+import "../css/App.css";
 import { Button, ButtonGroup } from "reactstrap";
 import PoliceKillings2015Provider from "./../police-killings-context/police-killings-context-2015";
 import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
@@ -56,7 +56,7 @@ class LoginControl extends React.Component {
 function Button2015(props) {
   return (
     <PoliceKillings2015Provider>
-      <AlabamaChart2015 />
+      <AlaskaChart2015 />
     </PoliceKillings2015Provider>
   );
 }
@@ -64,11 +64,7 @@ function Button2015(props) {
 function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
-      <AlabamaChart2016 />
       <AlaskaChart2016 />
-      <ArizonaChart2016 />
-      <ArkansasChart2016 />
-      <CaliforniaChart2016 />
     </PoliceKillings2016Provider>
   );
 }
