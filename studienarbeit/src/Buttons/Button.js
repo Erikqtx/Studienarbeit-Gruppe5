@@ -1,7 +1,6 @@
 import React, { useState, render } from "react";
 import "../css/Button.css";
 import ReactDOM from "react-dom";
-import { Button, ButtonGroup } from "reactstrap";
 import PoliceKillings2015Provider from "./../police-killings-context/police-killings-context-2015";
 import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
 import USAChart2015 from "./../charts/USAChart2015";

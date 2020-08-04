@@ -41,8 +41,8 @@ export default function FloridaChart2015() {
   return (
     <Bar
       data={data}
-      width="300"
-      height="200"
+      width="100"
+      height="100"
       options={{
         maintainAspectRatio: true,
       }}

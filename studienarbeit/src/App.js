@@ -1,11 +1,8 @@
 import React, { useState, Component } from "react";
 import "./css/App.css";
 import Button from "./Buttons/Button";
-import ButtonState from "./Buttons/ButtonState";
 import "./css/Button.css";
-import Map2015 from "./Map/Map2015";
 import { render } from "@testing-library/react";
-import ButtonAlaska from "./Buttons/ButtonAlaska";
 class App extends Component {
   render() {
     return (
@@ -24,12 +21,11 @@ class App extends Component {
             <br />
             For current reasons, the composition of the almost 50-times-bigger
             balance of the USA is shown here.
-            <Button />
           </p>
         </div>
         <div className="Map"></div>
-        <ButtonState></ButtonState>
-        <ButtonAlaska></ButtonAlaska>
+        <Button />
+        <div className="States"></div>
       </div>
     );
   }

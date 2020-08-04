@@ -44,7 +44,7 @@ export default function AlabamaChart2015() {
       width="100"
       height="100"
       options={{
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
       }}
     />
   );
