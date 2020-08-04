@@ -1,7 +1,7 @@
 import React, { useState, render } from "react";
 import "../css/Button.css";
-import ReactDOM from 'react-dom';
-import { Button, ButtonGroup } from 'reactstrap';
+import ReactDOM from "react-dom";
+import { Button, ButtonGroup } from "reactstrap";
 import PoliceKillings2015Provider from "./../police-killings-context/police-killings-context-2015";
 import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
 import USAChart2015 from "./../charts/USAChart2015";
@@ -12,15 +12,15 @@ class LoginControl extends React.Component {
     super(props);
     this.handleLoginClick = this.handleLoginClick.bind(this);
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.state = {isLoggedIn: false};
+    this.state = { isLoggedIn: false };
   }
 
   handleLoginClick() {
-    this.setState({isLoggedIn: true});
+    this.setState({ isLoggedIn: true });
   }
 
   handleLogoutClick() {
-    this.setState({isLoggedIn: false});
+    this.setState({ isLoggedIn: false });
   }
 
   render() {
@@ -44,16 +44,16 @@ class LoginControl extends React.Component {
 
 function Button2015(props) {
   return (
-  <PoliceKillings2015Provider>
-  <USAChart2015/>
-  </PoliceKillings2015Provider>
+    <PoliceKillings2015Provider>
+      <USAChart2015 />
+    </PoliceKillings2015Provider>
   );
 }
 
 function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
-      <USAChart2016/>
+      <USAChart2016 />
     </PoliceKillings2016Provider>
   );
 }
@@ -67,24 +67,13 @@ function Buttoncountry(props) {
 }
 
 function LoginButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      2015
-    </button>
-  );
+  return <button onClick={props.onClick}>2015</button>;
 }
 
 function LogoutButton(props) {
-  return (
-    <button onClick={props.onClick}>
-     2016
-    </button>
-  );
+  return <button onClick={props.onClick}>2016</button>;
 }
 
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('root')
-);
+ReactDOM.render(<LoginControl />, document.getElementById("root"));
 
 export default LoginControl;

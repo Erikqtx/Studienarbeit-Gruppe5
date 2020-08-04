@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, Component } from "react";
 import USAMap from "react-usa-map";
-export default function Map2015() {
+class Map2015 extends Component {
   mapHandler = (event) => {
     alert(event.target.dataset.name);
   };
@@ -254,30 +254,10 @@ export default function Map2015() {
       },
     };
   };
-  return (
-    <div className="App">
-      <div className="box header">
-        <h1>
-          Police Killings in America
-          <hr />
-        </h1>
-      </div>
-      <div className="box text">
-        <p>
-          In Germany, 10 People died by the hand of the police in 2015, in 2016
-          there where 11. Compared to the population, this results in a balance
-          of 1.3 police killings per 10.000.000 inhabitants.
-          <br />
-          For current reasons, the composition of the almost 50-times-bigger
-          balance of the USA is shown here.
-        </p>
-      </div>
-      <div className="Map">
-        <USAMap
-          customize={this.statesCustomConfig()}
-          onClick={this.mapHandler}
-        />
-      </div>
-    </div>
-  );
+  render() {
+    return (
+      <USAMap customize={this.statesCustomConfig()} onClick={this.mapHandler} />
+    );
+  }
 }
+export default Map2015;
