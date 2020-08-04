@@ -59,6 +59,10 @@ function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
+      <p>
+        Legende: 0-5 Tode: #f4f5ba, 5-10 Tode: #ffff87, 10-20 Tode: #eded3e,
+        20-40 Tode: #f56262,40-100 Tode: #e64343, 100-250 Tode: #d10a0a{" "}
+      </p>
       <Map2016></Map2016>
     </PoliceKillings2016Provider>
   );
