@@ -1,5 +1,6 @@
 import React, { useState, Component } from "react";
 import "./css/App.css";
+import Button from './Buttons/Button'
 import USAChart2015 from "./charts/USAChart2015";
 import USAChart2016 from "./charts/USAChart2016";
 import PoliceKillings2015Provider, {
@@ -282,9 +283,7 @@ class App extends Component {
             <br />
             For current reasons, the composition of the almost 50-times-bigger
             balance of the USA is shown here.
-            <PoliceKillings2015Provider>
-              <USAChart2015></USAChart2015>
-            </PoliceKillings2015Provider>
+            <Button/>
           </p>
         </div>
         <div className="Map">

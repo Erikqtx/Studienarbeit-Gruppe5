@@ -1,36 +1,90 @@
-import React from "react";
+import React, { useState, render } from "react";
 import "../css/Button.css";
+import ReactDOM from 'react-dom';
+import { Button, ButtonGroup } from 'reactstrap';
+import PoliceKillings2015Provider from "./../police-killings-context/police-killings-context-2015";
+import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
+import USAChart2015 from "./../charts/USAChart2015";
+import USAChart2016 from "./../charts/USAChart2016";
 
-function Button() {
-  function Country() {}
-
-  function State() {
-    console.log("State");
+class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.state = {isLoggedIn: false};
   }
 
-  function year2015() {}
-
-  function year2016() {
-    console.log("chartof2016");
+  handleLoginClick() {
+    this.setState({isLoggedIn: true});
   }
 
+  handleLogoutClick() {
+    this.setState({isLoggedIn: false});
+  }
+
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
+
+    if (isLoggedIn) {
+      button = <LogoutButton onClick={this.handleLogoutClick} />;
+    } else {
+      button = <LoginButton onClick={this.handleLoginClick} />;
+    }
+
+    return (
+      <div>
+        <Buttoncountry isLoggedIn={isLoggedIn} />
+        {button}
+      </div>
+    );
+  }
+}
+
+function Button2015(props) {
   return (
-    <div className="parentbox">
-      <button data-testid="country" className="country" onClick={Country}>
-        Country
-      </button>
-      <button data-testid="state" className="state" onClick={State}>
-        State
-      </button>
-      <div className="space" />
-      <button data-testid="year1" className="year1" onClick={year2015}>
-        2015
-      </button>
-      <button data-testid="year2" className="year2" onClick={year2016}>
-        2016
-      </button>
-    </div>
+  <PoliceKillings2015Provider>
+  <USAChart2015/>
+  </PoliceKillings2015Provider>
   );
 }
 
-export default Button;
+function Button2016(props) {
+  return (
+    <PoliceKillings2016Provider>
+      <USAChart2016/>
+    </PoliceKillings2016Provider>
+  );
+}
+
+function Buttoncountry(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <Button2015 />;
+  }
+  return <Button2016 />;
+}
+
+function LoginButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      2015
+    </button>
+  );
+}
+
+function LogoutButton(props) {
+  return (
+    <button onClick={props.onClick}>
+     2016
+    </button>
+  );
+}
+
+ReactDOM.render(
+  <LoginControl />,
+  document.getElementById('root')
+);
+
+export default LoginControl;
