@@ -5,6 +5,8 @@ import PoliceKillings2015Provider from "./../police-killings-context/police-kill
 import PoliceKillings2016Provider from "./../police-killings-context/police-killings-context-2016";
 import USAChart2015 from "./../charts/USAChart2015";
 import USAChart2016 from "./../charts/USAChart2016";
+import RaceChart2015 from "./../charts/RaceUSAChart2015";
+import RaceChart2016 from "./../charts/RaceUSAChart2016";
 import Map2015 from "../Map/Map2015";
 import Map2016 from "../Map/Map2016";
 class ChartControl extends React.Component {
@@ -47,7 +49,12 @@ function Button2015(props) {
   //Return 2015
   return (
     <PoliceKillings2015Provider>
-      <USAChart2015 />
+      <div className="Map">
+        <USAChart2015 />
+      </div>
+      <div className="Race">
+        <RaceChart2015 />
+      </div>
       <div className="legend">
         <p className="leg one"> ■ 0-5 Tode </p>
         <p className="leg two"> ■ 5-10 Tode </p>
@@ -66,6 +73,9 @@ function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
+      <div className="Race">
+        <RaceChart2016 />
+      </div>
       <div className="legend">
         <p className="leg one"> ■ 0-5 Tode </p>
         <p className="leg two"> ■ 5-10 Tode </p>

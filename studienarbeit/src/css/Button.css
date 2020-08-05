@@ -1,5 +1,5 @@
-.year{
-  background-color: rgba(195, 216, 221, 0.301);;
+.year {
+  background-color: rgba(195, 216, 221, 0.301);
   border: none;
   color: white;
   padding: 10px 15px;
@@ -9,18 +9,18 @@
   cursor: pointer;
   width: 10em;
   float: left;
- }
- 
- .year:hover{
-   background-color: rgba(255, 255, 255, 0.432);
-   color: white;
-  }
- 
-  .year:active{
-   color: black;
-   background-color: white;
-  }
- 
+}
+
+.year:hover {
+  background-color: rgba(255, 255, 255, 0.432);
+  color: white;
+}
+
+.year:active {
+  color: black;
+  background-color: white;
+}
+
 .legend {
   text-align: center;
   width: 100vw;
@@ -29,7 +29,6 @@
 
 .leg {
   float: left;
-  
 }
 
 .one {
@@ -60,4 +59,11 @@
 .six {
   color: #d10a0a;
   margin-left: 2%;
+}
+
+.Race {
+  margin-left: 50%;
+  margin-top: -15%;
+  margin-bottom: 10%;
+  bottom: 50%;
 }

@@ -95,24 +95,33 @@ export default function USAChart2016() {
   }));
 
   return (
-    <Bar
-      data={data}
-      width="300"
-      height="200"
-      options={{
-        maintainAspectRatio: true,
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                min: 70,
-                max: 110,
-              },
-              display: true,
-            },
-          ],
-        },
+    <div
+      style={{
+        responsive: "true",
+        width: "40vw",
+        height: "50vh",
       }}
-    />
+    >
+      <Bar
+        data={data}
+        width={700}
+        height={700}
+        options={{
+          maintainAspectRatio: false,
+          responsive: false,
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  min: 70,
+                  max: 110,
+                },
+                display: true,
+              },
+            ],
+          },
+        }}
+      />
+    </div>
   );
 }

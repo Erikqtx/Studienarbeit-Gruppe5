@@ -255,7 +255,17 @@ class Map2015 extends Component {
   };
   render() {
     return (
-      <USAMap customize={this.statesCustomConfig()} onClick={this.mapHandler} />
+      <div
+        style={{
+          margin: "top",
+          responsive: "true",
+        }}
+      >
+        <USAMap
+          customize={this.statesCustomConfig()}
+          onClick={this.mapHandler}
+        />
+      </div>
     );
   }
 }
