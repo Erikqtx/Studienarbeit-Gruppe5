@@ -48,11 +48,15 @@ function Button2015(props) {
   return (
     <PoliceKillings2015Provider>
       <USAChart2015 />
-      <p>
-        Legende: 0-5 Tode: #f4f5ba, 5-10 Tode: #ffff87, 10-20 Tode: #eded3e,
-        20-40 Tode: #f56262,40-100 Tode: #e64343, 100-250 Tode: #d10a0a{" "}
-      </p>
-      <Map2015></Map2015>
+      <div className="legend">
+        <p className="leg one"> ■ 0-5 Tode </p>
+        <p className="leg two"> ■ 5-10 Tode </p>
+        <p className="leg three"> ■ 10-20 Tode </p>
+        <p className="leg four"> ■ 20-40 Tode </p>
+        <p className="leg five"> ■ 40-100 Tode </p>
+        <p className="leg six"> ■ 100-250 Tode </p>
+      </div>
+      <Map2015 />
     </PoliceKillings2015Provider>
   );
 }
@@ -62,11 +66,15 @@ function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
-      <p>
-        Legende: 0-5 Tode: #f4f5ba, 5-10 Tode: #ffff87, 10-20 Tode: #eded3e,
-        20-40 Tode: #f56262,40-100 Tode: #e64343, 100-250 Tode: #d10a0a{" "}
-      </p>
-      <Map2016></Map2016>
+      <div className="legend">
+        <p className="leg one"> ■ 0-5 Tode </p>
+        <p className="leg two"> ■ 5-10 Tode </p>
+        <p className="leg three"> ■ 10-20 Tode </p>
+        <p className="leg four"> ■ 20-40 Tode </p>
+        <p className="leg five"> ■ 40-100 Tode </p>
+        <p className="leg six"> ■ 100-250 Tode </p>
+      </div>
+      <Map2016 />
     </PoliceKillings2016Provider>
   );
 }

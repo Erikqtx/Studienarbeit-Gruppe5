@@ -7,7 +7,6 @@ export default function USAChart2016() {
   const months = extractMonths(killings);
   const january = months.filter((datapoint) => datapoint === "January");
   const januaryl = january.length;
-  console.log(januaryl);
 
   const february = months.filter((datapoint) => datapoint === "February");
   const februaryl = february.length;
