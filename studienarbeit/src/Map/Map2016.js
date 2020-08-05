@@ -1,6 +1,5 @@
-import React, { useState, Component, render } from "react";
+import React, { Component, render } from "react";
 import USAMap from "react-usa-map";
-import ReactDOM from "react-dom";
 class Map2016 extends Component {
   mapHandler = (event) => {
     alert(event.target.dataset.name);

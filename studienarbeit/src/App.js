@@ -1,11 +1,11 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import "./css/App.css";
 import Button from "./Buttons/Button";
 import "./css/Button.css";
-import { render } from "@testing-library/react";
 class App extends Component {
   render() {
     return (
+      //Start return
       <div className="App">
         <div className="box header">
           <h1>

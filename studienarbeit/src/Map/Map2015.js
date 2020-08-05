@@ -1,7 +1,5 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import USAMap from "react-usa-map";
-import ReactDOM from "react-dom";
-import AlabamaChart2015 from "../charts/2015/Alabama";
 class Map2015 extends Component {
   mapHandler = (event) => {
     alert(event.target.dataset.name);
@@ -16,8 +14,7 @@ class Map2015 extends Component {
       },
       AK: {
         fill: "#f4f5ba",
-        clickHandler: (event) =>
-          alert("Alaska Deaths: 5", event.target.dataset),
+        clickHandler: (event) => alert("Vorlesung", event.target.dataset),
       },
       AZ: {
         fill: "#f56262",

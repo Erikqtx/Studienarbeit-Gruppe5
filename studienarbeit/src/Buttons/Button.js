@@ -1,4 +1,4 @@
-import React, { useState, render } from "react";
+import React from "react";
 import "../css/Button.css";
 import ReactDOM from "react-dom";
 import PoliceKillings2015Provider from "./../police-killings-context/police-killings-context-2015";
@@ -7,35 +7,36 @@ import USAChart2015 from "./../charts/USAChart2015";
 import USAChart2016 from "./../charts/USAChart2016";
 import Map2015 from "../Map/Map2015";
 import Map2016 from "../Map/Map2016";
-class LoginControl extends React.Component {
+class ChartControl extends React.Component {
   constructor(props) {
     super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.state = { isLoggedIn: false };
+    //Binding to make 'this' work in the Callback
+    this.handleChartClick = this.handleChartClick.bind(this);
+    this.handleSecChartClick = this.handleSecChartClick.bind(this);
+    this.state = { isThere: false };
   }
 
-  handleLoginClick() {
-    this.setState({ isLoggedIn: true });
+  handleChartClick() {
+    this.setState({ isThere: true });
   }
 
-  handleLogoutClick() {
-    this.setState({ isLoggedIn: false });
+  handleSecChartClick() {
+    this.setState({ isThere: false });
   }
-
+  //Check actual 'this' state and handle the clicks
   render() {
-    const isLoggedIn = this.state.isLoggedIn;
+    const isThere = this.state.isThere;
     let button;
 
-    if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
+    if (isThere) {
+      button = <SecChartBtn onClick={this.handleSecChartClick} />;
     } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
+      button = <ChartBtn onClick={this.handleChartClick} />;
     }
 
     return (
       <div>
-        <Buttoncountry isLoggedIn={isLoggedIn} />
+        <Buttoncountry isThere={isThere} />
         {button}
       </div>
     );
@@ -43,6 +44,7 @@ class LoginControl extends React.Component {
 }
 
 function Button2015(props) {
+  //Return 2015
   return (
     <PoliceKillings2015Provider>
       <USAChart2015 />
@@ -56,6 +58,7 @@ function Button2015(props) {
 }
 
 function Button2016(props) {
+  //Return 2016
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
@@ -68,30 +71,32 @@ function Button2016(props) {
   );
 }
 
+//Check if isThere to change the ButtonFunction
 function Buttoncountry(props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
+  const isThere = props.isThere;
+  if (isThere) {
     return <Button2015 />;
   }
   return <Button2016 />;
 }
 
-function LoginButton(props) {
+//Actual Button
+function ChartBtn(props) {
   return (
     <button className="year" onClick={props.onClick}>
       2015
     </button>
   );
 }
-
-function LogoutButton(props) {
+//Actual Button
+function SecChartBtn(props) {
   return (
     <button className="year" onClick={props.onClick}>
       2016
     </button>
   );
 }
+//render in Document
+ReactDOM.render(<ChartControl />, document.getElementById("root"));
 
-ReactDOM.render(<LoginControl />, document.getElementById("root"));
-
-export default LoginControl;
+export default ChartControl;

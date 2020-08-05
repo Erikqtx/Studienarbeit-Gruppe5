@@ -1,5 +1,5 @@
 import React, { useContext, useMemo } from "react";
-import { HorizontalBar } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import { PoliceKillings2015Context } from "../police-killings-context/police-killings-context-2015";
 import { extractMonths } from "../ChartHelper/FilterData";
 export default function USAChart2015() {
@@ -98,7 +98,7 @@ export default function USAChart2015() {
   }));
 
   return (
-    <HorizontalBar
+    <Bar
       data={data}
       width="100"
       height="100"

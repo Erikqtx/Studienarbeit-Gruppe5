@@ -10,7 +10,6 @@ export default function AlabamaChart2015() {
   //To get January entries
   const alabama = state.filter((datapoint) => datapoint === "AL");
   const alabamal = alabama.length;
-  console.log(alabamal);
   const data = useMemo(() => ({
     options: {
       scales: {
