@@ -100,8 +100,8 @@ export default function USAChart2015() {
   return (
     <Bar
       data={data}
-      width={700}
-      height={700}
+      width={800}
+      height={800}
       options={{
         maintainAspectRatio: true,
         responsive: false,

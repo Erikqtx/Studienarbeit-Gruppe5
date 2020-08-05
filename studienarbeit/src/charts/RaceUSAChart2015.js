@@ -56,33 +56,26 @@ export default function RaceChart2015() {
   }));
 
   return (
-    <div
-      style={{
-        responsive: "true",
-        width: "40vw",
-        height: "50vh",
-      }}
-    >
-      <Bar
-        data={data}
-        width={700}
-        height={700}
-        options={{
-          maintainAspectRatio: false,
-          responsive: true,
-          scales: {
-            yAxes: [
-              {
-                ticks: {
-                  min: 0,
-                  max: 600,
-                },
-                display: true,
+    //Änderbar mit nen div style { } aber responsive keine Chance
+    <Bar
+      data={data}
+      width={800}
+      height={800}
+      options={{
+        maintainAspectRatio: false,
+        responsive: false,
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                min: 0,
+                max: 600,
               },
-            ],
-          },
-        }}
-      />
-    </div>
+              display: true,
+            },
+          ],
+        },
+      }}
+    />
   );
 }

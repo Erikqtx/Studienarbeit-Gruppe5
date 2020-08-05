@@ -49,12 +49,8 @@ function Button2015(props) {
   //Return 2015
   return (
     <PoliceKillings2015Provider>
-      <div className="Map">
-        <USAChart2015 />
-      </div>
-      <div className="Race">
-        <RaceChart2015 />
-      </div>
+      <USAChart2015 />
+      <RaceChart2015></RaceChart2015>
       <div className="legend">
         <p className="leg one"> ■ 0-5 Tode </p>
         <p className="leg two"> ■ 5-10 Tode </p>
@@ -73,9 +69,7 @@ function Button2016(props) {
   return (
     <PoliceKillings2016Provider>
       <USAChart2016 />
-      <div className="Race">
-        <RaceChart2016 />
-      </div>
+      <RaceChart2016></RaceChart2016>
       <div className="legend">
         <p className="leg one"> ■ 0-5 Tode </p>
         <p className="leg two"> ■ 5-10 Tode </p>
